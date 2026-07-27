@@ -1,8 +1,37 @@
 body{
-    background-color: rgba(43, 255, 0, 0.036);   
+    background-color: rgba(43, 255, 0, 0.036);
+    font-family: Arial, Helvetica, sans-serif;   
+}
+.card{
+    background-color: aquamarine; 
+    width: 800px;
+    height: 600px; 
+    margin: auto;
+    padding: 30px;
+    border: 2pt solid black;
 }
 p{
+    color: yellowgreen;
     font-size: 25px;
     text-align: justify;
     text-decoration: underline;
+}
+#textop1{
+    color: blueviolet;
+    text-align: justify;
+    font-size: larger;
+}
+#texto{
+    color: #333333;
+}
+h1{
+    color: blue;
+    font-family: 30px;
+    text-align: center;
+    background-color: aqua;
+    text-decoration: overline;
+}
+h2{
+    text-align: center;
+    color: red;
 }
