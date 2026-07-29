@@ -82,6 +82,15 @@ body{
     padding: 20px;
 }
 
+.rodape p{
+    font-size: 15px;
+}
+
+.redes-sociais{
+    display: flex;
+    gap: 15px;
+}
+
 .redes-sociais img{
     width: 30px;
 }
