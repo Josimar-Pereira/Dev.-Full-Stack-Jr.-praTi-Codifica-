@@ -60,6 +60,8 @@ body{
     border-radius: 8px;
 }
 
+/* Notícia de destaque */
+
 .destaque h1{
     font-size: 30px;
     margin: 10px 0;
@@ -90,6 +92,8 @@ body{
     color: #888;
 }
 
+/* Grid de Notícias */
+
 .grade-noticias{
     display: grid;
     grid-template-columns: repeat(autofit, minmax(220px, 1fr));
@@ -101,4 +105,65 @@ body{
     background: #fff;
     padding: 18px;
     border-radius: 8px;
+}
+
+.cartao h2{
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.cartao p{
+    font-size: 15px;
+    color: #555;
+}
+
+/* Barra Lateral */
+
+.menu-lateral{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu-lateral h3{
+    border-bottom: 2px solid #c0392b;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.menu-lateral ol{
+    padding-left: 20px;
+}
+
+.menu-lateral li{
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.rodape{
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Responsividade */
+
+@media(max-width: 768px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "menu-lateral"
+        "rodape";
+    }
+
+    .cabecalho{
+        flex-direction: column;
+        gap: 12px;
+    }
 }
