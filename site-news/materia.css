@@ -254,7 +254,7 @@ body{
     margin-bottom: 12px;
 }
 
-.caixa-newletter input, .caixa-newletter button{
+.caixa-newsletter input, .caixa-newsletter button{
     width: 100%;
     font-family: var(--fonte-ui);
     padding: 10px;
@@ -263,7 +263,7 @@ body{
     border: 1px solid #ccc;
 }
 
-.caixa-newletter button{
+.caixa-newsletter button{
     background-color: var(--cor-destaque);
     color: #ffffff;
     border: none;
