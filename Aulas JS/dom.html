@@ -9,15 +9,39 @@
     <h1>Estudos DOM</h1>
     <p>Aprendendo a usar o DOM em JavaScript</p>
     <p>Aqui vai mudar</p>
+    <p id="id">Vamos aprender DOM</p>
+    <label for="nome">Digite seu nome:</label>
+    <input type="text" name="nome" id="nome">
+    <button onclick="mostrarNome()">Mostrar Nome</button>
+    <p id="resultado"></p>
+
     <script>
-        window.document.write("Olá Mundo!");
+         window.document.write("<h1 style='color: #00ffcc; font-family: Arial, sans-serif; font-size: 40px; text-align: center;'>Olá Mundo!</h1>")
+
         let novoTexto = document.getElementsByTagName("p")[1]
         novoTexto.innerHTML = "Aqui vai mudar.</br>Manipulando o DOM!"
         novoTexto.style.color = 'red'
+
         let novaTag = document.createElement('h1');
         novaTag.innerHTML = "Deu certo!";  
-        novaTag.style.textAlign = 'center'  
+        novaTag.style.textAlign = 'center'
+        novaTag.style.color = '#faffaf'
+
+        document.body.style.backgroundColor = 'rgba(255, 99, 71, 0.8)'
+
         document.body.appendChild(novaTag);
+
+        document.getElementById("id").style.fontSize = '40px';
+        document.getElementById("id").innerHTML = 'Vamos aprender DOM<br/> Já estamos aprendendo!';
+        document.getElementById("id").style.color = 'blue';
+
+        function mostrarNome(){
+            let nome = document.getElementById("nome").value
+            document.getElementById("resultado").innerHTML = `Olá ${nome}!`
+            document.getElementById("resultado").style.color = 'green'
+            document.getElementById('resultado').style.fontSize = '30px'
+            document.getElementById('resultado').style.textAlign = 'center'
+        }
     </script>
 </body>
 </html>
