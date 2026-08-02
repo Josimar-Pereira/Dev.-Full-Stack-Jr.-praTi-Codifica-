@@ -11,6 +11,13 @@
     <p>Aqui vai mudar</p>
     <script>
         window.document.write("Olá Mundo!");
+        let novoTexto = document.getElementsByTagName("p")[1]
+        novoTexto.innerHTML = "Aqui vai mudar.</br>Manipulando o DOM!"
+        novoTexto.style.color = 'red'
+        let novaTag = document.createElement('h1');
+        novaTag.innerHTML = "Deu certo!";  
+        novaTag.style.textAlign = 'center'  
+        document.body.appendChild(novaTag);
     </script>
 </body>
 </html>
