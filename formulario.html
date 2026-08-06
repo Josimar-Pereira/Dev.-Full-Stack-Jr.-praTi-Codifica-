@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulário de cadastro</legend>
+    <form action="#" method="post">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" placeholder="Nome completo" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Senha min 8 max 16 caracter" required minlength="8" maxlength="16">
+        <br><br>
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="formato (xx)xxxxxxxxx" required>
+        <br><br>
+        <label for="data">Data de nascimento</label>
+        <input type="date" name="data" id="data">
+        <br><br>
+        <p>Escolha seu turno:</p>
+        <input type="radio" name="turno" id="manha">
+        <label for="manha">Manhã</label>
+        <input type="radio" name="turno" id="tarde">
+        <label for="tarde">Tarde</label>
+        <input type="radio" name="turno" id="noite">
+        <label for="noite">Noite</label>
+        <br><br>
+        <p>Escolha as disciplinas:</p>
+        <input type="checkbox" name="materia" id="quimica" value="quimica">
+        <label for="quimica">Quimica</label>
+        <input type="checkbox" name="materia" id="matematica" value="matematica">
+        <label for="matematica">matematica</label>
+        <input type="checkbox" name="materia" id="biologia" value="biologia">
+        <label for="biologia">Biologia</label>
+    </fieldset>    
+    </form>
+</body>
+</html>
