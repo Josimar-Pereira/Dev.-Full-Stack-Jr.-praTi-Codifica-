@@ -1,4 +1,4 @@
-import { registrar } from "./autenticador.js";
+import { login, registrar } from "./autenticador.js";
 
 const form = document.querySelector("#form-cadastro");
 const aviso = document.querySelector("#aviso");
@@ -17,5 +17,6 @@ form.addEventListener("submit", (evento) => {
         window.location.href = "login.html"; 
     } catch (erro) {
         aviso.textContent = erro.message;
+        //window.location.href = "login.html"; 
     }
 });

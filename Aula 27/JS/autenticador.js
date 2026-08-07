@@ -14,3 +14,13 @@ export function registrar(usuario){
     usuarios.push(usuario);
     localStorage.setItem(CHAVE_USUARIOS, JSON.stringify(usuarios));
 }
+
+export function login(email, senha){
+    const usuarios = lerUsuarios();
+    const usuario = usuarios.find(user => user.email === email && user.senha === senha)
+    if(!usuario){
+        throw new Error("Email ou senha incorretos.");
+    }
+    localStorage.setItem(CHAVE_SESSAO, JSON.stringify({email: usuario.email}));
+    return usuario;
+}
