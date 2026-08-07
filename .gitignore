@@ -38,3 +38,31 @@ build/
 ### Mac OS ###
 .DS_Store
 .idea/vcs.xml
+
+# --- Java ---
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+
+# Pacotes jar, war e ear
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Arquivos de Build (Maven / Gradle)
+target/
+build/
+.gradle/
+out/
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.fleet/
