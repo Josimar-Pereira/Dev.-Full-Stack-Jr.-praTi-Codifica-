@@ -1,1 +1,34 @@
 .hintrc
+# Dependências
+/node_modules
+/jspm_packages
+
+# Variáveis de ambiente e segredos
+.env
+.env.local
+.env.*.local
+
+# Logs e arquivos de diagnóstico
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Builds e arquivos gerados
+/dist
+/build
+/.next
+/out
+
+# Cache
+.eslintcache
+.parcel-cache
+.turbo
+.cache
+
+# Editores e sistemas operacionais
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
